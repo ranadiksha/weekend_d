@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "ngrana"
+    }
+  },
+  "defaultProject": "ngrana",
+  "cli": {
+    "analytics": false
+  }
 }
