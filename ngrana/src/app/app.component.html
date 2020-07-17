@@ -1,27 +1,27 @@
-<h1 class="title" style="color: blue;">{{ title }}</h1>
+<!-- nav.component.html -->
+<app-nav></app-nav>
+<!--/ nav.component.html -->
 
-<ul>
-  <li *ngFor="let mobPart of mobParts">
-    <p [ngStyle]="{ 'text-shadow': '2px 2px 1px red' }">
-      Products id : {{ mobPart.id }}
-    </p>
-    <p [style.color]="mobPart.prodColor">Products name: {{ mobPart.name }}</p>
-    <ng-container *ngIf="mobPart.inStock != 0; then stockVal; else outOfStock">
-    </ng-container>
+<!-- banner-one.component.html -->
+<app-banner-one></app-banner-one>
+<!--/ banner-one.component.html -->
 
-    <ng-template #stockVal>
-      Last <mark>{{ mobPart.inStock }}</mark> Parts Available in stock now...
-    </ng-template>
+<!-- products.component.html -->
+<app-products></app-products>
+<!--/ products.component.html -->
 
-    <ng-template #outOfStock>
-      Out Of Stock
-    </ng-template>
-    <p [ngStyle]="{ display: mobPart.veg === true ? 'block' : 'none' }">
-      Veg :
-      <img
-        src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/Green_sphere.svg/2000px-Green_sphere.svg.png"
-        width="16"
-      />
-    </p>
-  </li>
-</ul>
+<!-- banner-two.component.html -->
+<app-banner-two></app-banner-two>
+<!--/ banner-two.component.html -->
+
+<!-- contact-us.component.html -->
+<app-contact-us></app-contact-us>
+<!--/ contact-us.component.html -->
+
+<!-- banner-three.component.html -->
+<app-banner-three></app-banner-three>
+<!--/ banner-three.component.html -->
+
+<!-- footer.component.html -->
+<app-footer></app-footer>
+<!-- footer.component.html -->
