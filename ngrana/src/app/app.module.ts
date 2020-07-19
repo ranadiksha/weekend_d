@@ -16,6 +16,8 @@ import { BooksComponent } from './products/books/books.component';
 import { SqrtPipe } from './pipes/sqrt.pipe';
 
 import { AppRoutingModule } from './modules/app-routing.module';
+import { HomeComponent } from './products/home/home.component';
+import { PagenotFoundComponent } from './products/pagenot-found/pagenot-found.component';
 
 @NgModule({
   declarations: [
@@ -32,6 +34,8 @@ import { AppRoutingModule } from './modules/app-routing.module';
     ClothesComponent,
     BooksComponent,
     SqrtPipe,
+    HomeComponent,
+    PagenotFoundComponent,
   ],
 
   imports: [BrowserModule, AppRoutingModule],

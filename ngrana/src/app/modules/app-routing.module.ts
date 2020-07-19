@@ -5,8 +5,18 @@ import { RouterModule, Routes } from '@angular/router';
 import { MobilesComponent } from '../products/mobiles/mobiles.component';
 import { ClothesComponent } from '../products/clothes/clothes.component';
 import { BooksComponent } from '../products/books/books.component';
+import { HomeComponent } from '../products/home/home.component';
+import { PagenotFoundComponent } from '../products/pagenot-found/pagenot-found.component';
 
 const appRoutes: Routes = [
+  {
+    path: '',
+    component: HomeComponent,
+  },
+  {
+    path: 'Home',
+    component: HomeComponent,
+  },
   {
     path: 'mobiles',
     component: MobilesComponent,
@@ -18,6 +28,10 @@ const appRoutes: Routes = [
   {
     path: 'books',
     component: BooksComponent,
+  },
+  {
+    path: '**',
+    component: PagenotFoundComponent,
   },
 ];
 
