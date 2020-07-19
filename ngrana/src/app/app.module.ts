@@ -13,6 +13,9 @@ import { SimpleStyleDirective } from './directives/simple-style.directive';
 import { MobilesComponent } from './products/mobiles/mobiles.component';
 import { ClothesComponent } from './products/clothes/clothes.component';
 import { BooksComponent } from './products/books/books.component';
+import { SqrtPipe } from './pipes/sqrt.pipe';
+
+import { AppRoutingModule } from './modules/app-routing.module';
 
 @NgModule({
   declarations: [
@@ -28,9 +31,10 @@ import { BooksComponent } from './products/books/books.component';
     MobilesComponent,
     ClothesComponent,
     BooksComponent,
+    SqrtPipe,
   ],
 
-  imports: [BrowserModule],
+  imports: [BrowserModule, AppRoutingModule],
   bootstrap: [FirstComponent], // root comp
 })
 export class FirstModule {}
