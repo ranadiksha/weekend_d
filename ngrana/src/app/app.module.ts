@@ -18,6 +18,10 @@ import { SqrtPipe } from './pipes/sqrt.pipe';
 import { AppRoutingModule } from './modules/app-routing.module';
 import { HomeComponent } from './products/home/home.component';
 import { PagenotFoundComponent } from './products/pagenot-found/pagenot-found.component';
+import { SamsungComponent } from './products/mobiles/samsung/samsung.component';
+import { RedmiComponent } from './products/mobiles/redmi/redmi.component';
+import { VivoComponent } from './products/mobiles/vivo/vivo.component';
+import { MobileMenuComponent } from './products/mobiles/mobile-menu/mobile-menu.component';
 
 @NgModule({
   declarations: [
@@ -36,6 +40,10 @@ import { PagenotFoundComponent } from './products/pagenot-found/pagenot-found.co
     SqrtPipe,
     HomeComponent,
     PagenotFoundComponent,
+    SamsungComponent,
+    RedmiComponent,
+    VivoComponent,
+    MobileMenuComponent,
   ],
 
   imports: [BrowserModule, AppRoutingModule],

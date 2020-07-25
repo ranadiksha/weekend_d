@@ -23,4 +23,12 @@ export class MobilesComponent implements OnInit {
 
     return sum;
   }
+
+  upQuantity(mobPart) {
+    if (mobPart.Quantity < mobPart.inStock) mobPart.quantity++;
+  }
+
+  downQuantity(mobPart) {
+    if (mobPart.Quantity != 0) mobPart.quantity--;
+  }
 }

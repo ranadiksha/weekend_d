@@ -7,6 +7,9 @@ import { ClothesComponent } from '../products/clothes/clothes.component';
 import { BooksComponent } from '../products/books/books.component';
 import { HomeComponent } from '../products/home/home.component';
 import { PagenotFoundComponent } from '../products/pagenot-found/pagenot-found.component';
+import { SamsungComponent } from '../products/mobiles/samsung/samsung.component';
+import { RedmiComponent } from '../products/mobiles/redmi/redmi.component';
+import { MobileMenuComponent } from '../products/mobiles/mobile-menu/mobile-menu.component';
 
 const appRoutes: Routes = [
   {
@@ -19,7 +22,12 @@ const appRoutes: Routes = [
   },
   {
     path: 'mobiles',
-    component: MobilesComponent,
+    component: MobileMenuComponent,
+    children: [
+      { path: '', component: MobilesComponent },
+      { path: 'Samsung', component: SamsungComponent },
+      { path: 'Redmi', component: RedmiComponent },
+    ],
   },
   {
     path: 'clothes',

@@ -4,9 +4,11 @@
 <ul>
   <li *ngFor="let mobPart of mobParts">
     <div class="col s12 m4">
-      <div class="card">
+      <div class="card" [class.clsName]="mobPart.inStock">
         <div class="card-image">
-          <img src="./../../../assets/img/sample-1.jpg" />
+          <img [src]="mobPart.prodImg" height="300px" />
+          <!-- <img src="./../../../assets/img/{{ mobPart.prodImg }}" height="200" /> -->
+
           <span class="card-title">Card Title</span>
           <a class="btn-floating halfway-fab waves-effect waves-light red"
             ><i class="material-icons">add</i></a
@@ -66,6 +68,20 @@
             />
           </span>
           <p>Price : {{ mobPart.price | currency: "INR" }}</p>
+          <p>
+            <a
+              class="waves-effect waves-light btn"
+              (click)="downQuantity(mobPart)"
+              ><i class="material-icons">remove</i></a
+            >
+            {{ mobPart.quantity }}
+            <a
+              class="waves-effect waves-light btn"
+              (click)="upQuantity(mobPart)"
+            >
+              <i class="material-icons">add</i></a
+            >
+          </p>
           <!-- 
 
                   function currency(mobPart.price, INR){
