@@ -1,3 +1,4 @@
+import { FormsModule } from '@angular/forms';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser'; // Module: Gorup of logic
 
@@ -46,7 +47,7 @@ import { MobileMenuComponent } from './products/mobiles/mobile-menu/mobile-menu.
     MobileMenuComponent,
   ],
 
-  imports: [BrowserModule, AppRoutingModule],
+  imports: [BrowserModule, AppRoutingModule, FormsModule],
   bootstrap: [FirstComponent], // root comp
 })
 export class FirstModule {}

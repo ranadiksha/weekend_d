@@ -30,7 +30,7 @@ export const MOBPARTS: MobParts[] = [
   {
     id: 1003,
     name: 'Mobile Screen 3',
-    inStock: 50,
+    inStock: 1450,
     prodColor: 'blue',
     veg: true,
     country: '',

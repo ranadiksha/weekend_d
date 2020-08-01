@@ -31,4 +31,10 @@ export class MobilesComponent implements OnInit {
   downQuantity(mobPart) {
     if (mobPart.Quantity != 0) mobPart.quantity--;
   }
+
+  catchVal(event) {
+    // console.clear();
+
+    console.log('event :', event);
+  }
 }

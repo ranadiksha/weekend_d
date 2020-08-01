@@ -5,6 +5,11 @@
   background-attachment: fixed;
 } */
 
+.quant input {
+  width: 40px;
+  text-align: center;
+}
+
 .clsName {
   background: #403b4a; /* fallback for old browsers */
   background: -webkit-linear-gradient(

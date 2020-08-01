@@ -29,8 +29,12 @@ const appRoutes: Routes = [
       { path: 'Redmi', component: RedmiComponent },
     ],
   },
+  //{
+  // path: 'clothes',
+  //component: ClothesComponent,
+  // },
   {
-    path: 'clothes',
+    path: 'clothes/:vacation',
     component: ClothesComponent,
   },
   {
